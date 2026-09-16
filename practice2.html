@@ -1,18 +1,18 @@
 <html>
     <head>
-        <link rel="stylesheet" href="practice1.css">
-        <script src="practice2.js"></script>
+        <link rel="stylesheet" href="practice1.css"> <!--link to css stylesheet-->
+        <script src="practice2.js"></script> <!--link to JavaScript, used for updating style atributes later-->
     </head>
     <body>
 
-        <div id="paragraph">Paragraph to be altered.</div>
+        <div id="paragraph">Paragraph to be altered.</div> <!--this is the text that is going to be altered by getting user input below-->
         
         <br>
         
         
-        <script type="text/javascript" src="functions.js"></script>
+        <script type="text/javascript" src="functions.js"></script> <!--get ready to read in values so that JavaScript can update the page when the button is pressed-->
         
-        Border R(0-225): <input type="text" id="borderR" value="">
+        Border R(0-225): <input type="text" id="borderR" value=""> <!--This and the following commands will read in the new values for the paragraph's style attributes-->
         <br></br>
 
         Border G(0-225): <input type="text" id="borderG" value="">
@@ -33,7 +33,7 @@
         Background B(0-225): <input type="text" id="backgroundB" value="">
         <br>
 
-        <button onclick="changeParagraphColor()">Click Here</button>
+        <button onclick="changeParagraphColor()">Click Here</button> <!--updates the page with new values-->
 
     </body>
 
