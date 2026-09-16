@@ -1,25 +1,25 @@
 <html>
     <head>
     <script>
-        function verifyPassword() {
-            var pass1 = document.getElementById("password1").value;
-            var pass2 = document.getElementById("password2").value;
+        function verifyPassword() { <!--JavaScript function to check if the password entered is valid-->
+            var pass1 = document.getElementById("password1").value; <!--gets the first password input-->
+            var pass2 = document.getElementById("password2").value; <!--gets input for the second password-->
 
-            if (pass1.length < 8) {
-                alert("Password must be at least 8 characters long.");
-            } else if (pass1 !== pass2) {
-                alert("Passwords do not match.");
+            if (pass1.length < 8) { <!--checks if the password is 8 characters or longer-->
+                alert("Password must be at least 8 characters long."); <!--notifies the user that the password isn't long enough-->
+            } else if (pass1 !== pass2) { <!--checks if the passwords are the same-->
+                alert("Passwords do not match."); <!--notifies the user that the passwords don't match-->
             } else {
-                alert("Passwords match!");
+                alert("Passwords match!"); <!--tells the user that the password is valid-->
             }
         }
     </script>
     </head>
     <body>
-        <h2>Password Verification</h2>
-        Enter password: <input type="text" id="password1"><br><br>
-        Re-enter password: <input type="text" id="password2"><br><br>
-    <button onclick="verifyPassword()">Submit</button>
+        <h2>Password Verification</h2> <!--page title-->
+        Enter password: <input type="text" id="password1"><br><br> <!--first input-->
+        Re-enter password: <input type="text" id="password2"><br><br> <!--second input-->
+    <button onclick="verifyPassword()">Submit</button> <!--checks for valid password when the button is clicked-->
     </body>
 
 
