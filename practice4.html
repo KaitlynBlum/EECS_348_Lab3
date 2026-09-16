@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <h2>Multiplication Table Generator</h2>
+    <h2>Multiplication Table Generator</h2> <!--Title-->
 
     <form method="post">
         Enter a number: 
@@ -11,27 +11,27 @@
     <br>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") { <!--runs when generate button is clicked-->
         $n = intval($_POST["num"]);
 
-        echo "<h3>Multiplication Table up to $n</h3>";
-        echo "<table>";
+        echo "<h3>Multiplication Table up to $n</h3>"; <!--creates text saying how high the multiplicaiton table goes-->
+        echo "<table>"; <!--sets up table to be filled-->
 
         // First row: column headers
         echo "<tr><th>*</th>";
-        for ($col = 1; $col <= $n; $col++) {
+        for ($col = 1; $col <= $n; $col++) { <!--enters values for the top-->
             echo "<th>$col</th>";
         }
         echo "</tr>";
 
         // Table rows
-        for ($row = 1; $row <= $n; $row++) {
+        for ($row = 1; $row <= $n; $row++) { <!--loop to fill in the rest of the rows-->
             echo "<tr>";
             // Row header
-            echo "<th>$row</th>";
+            echo "<th>$row</th>"; <!--enters the leftmost column-->
 
             // Multiplication values
-            for ($col = 1; $col <= $n; $col++) {
+            for ($col = 1; $col <= $n; $col++) { <!--fills in the rest of the values-->
                 echo "<td>" . ($row * $col) . "</td>";
             }
             echo "</tr>";
